@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-size: inherit;
     font-weight: inherit;
-    color: #444444;
+    color: inherit;
 }
 
 ul,
@@ -30,4 +30,5 @@ body {
     line-height: 1;
     letter-spacing: -0.025em;
     /* letter-spacing: 자간을 조절해주는 명령어 */
+    color: #444444;
 }

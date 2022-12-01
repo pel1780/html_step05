@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px solid tomato;
+} */
+
 .slick-track,
 .slick-list {
     transition-delay: 0.03s;
@@ -102,6 +106,10 @@
 
 /* main_mainSlide */
 
+.mainVisual {
+    position: relative;
+}
+
 .mainVisual .mainSlide figure {
     position: relative;
     height: 600px;
@@ -202,4 +210,260 @@
     background: #333;
     text-transform: uppercase;
     color: #fff;
+}
+
+/* main dots */
+.mainVisual .main_dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 1200px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+}
+
+.mainVisual .main_dots li {
+    flex: 1;
+    padding: 8px 20px;
+}
+
+.mainVisual .main_num {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, 0);
+
+    width: 50px;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.mainVisual .main_dots li.on {
+    background: #ff6347;
+}
+
+.mainVisual .main_dots li~li {
+    border-left: 1px solid #999;
+}
+
+
+/* maincontent */
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.mainContent p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.mainContent .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent .inner figure {
+    flex: 1;
+    text-align: center;
+}
+
+.mainContent figure img {
+    width: 100%;
+}
+
+.mainContent .img_box {
+    position: relative;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.service {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    background: #333;
+    color: #fff;
+    height: 100%;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+
+.mainContent .img_box:hover .service {
+    right: 0;
+}
+
+.mainContent .img_box img {
+    transition: 0.3s;
+}
+
+.mainContent .img_box:hover img {
+    transform: translate(-20px, 0);
+}
+
+
+
+.mainContent strong {
+    display: block;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.mainContent a {
+    display: inline-block;
+    padding: 5px 25px;
+    background: #333;
+    color: #fff;
+}
+
+.mainContent a:hover {
+    background: tomato;
+    color: #444444;
+}
+
+
+/* mainBanner */
+.mainBanner {
+    padding: 100px 0;
+    text-align: center;
+    background: url(../img/mainvisual03.jpg) no-repeat fixed center center/cover;
+    filter: grayscale(1);
+    /* background-attachment: fixed; 배경고정*/
+    color: #fff;
+}
+
+.mainBanner h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.mainBanner p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    /* backdrop-filter: blur(10px); 배경흐리게*/
+}
+
+.mainBanner i {
+    background: #333;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.mainBanner span {
+    vertical-align: 2px;
+    margin: 0 10px 0 0;
+}
+
+/* span은 inline 그래서 마진, 트랜스폼 안먹음 그럴때 버티컬어라인 수치를 줘서 맞추기 */
+
+.mainProduct {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.mainProduct h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.mainProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+.mainProduct .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mainProduct .img_box {
+    margin: 0 0 20px 0;
+}
+
+.mainProduct img {
+    width: 100%;
+}
+
+.mainProduct figure {
+    padding: 0 15px;
+}
+
+.mainProduct .main_pro_slide {
+    margin: 0 -15px;
+}
+
+.mainProduct .arrows a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 37px;
+    height: 75px;
+
+    font-size: 0;
+}
+
+.mainProduct .arrows .prev {
+    background: url(../img/prev.png);
+    margin: 0 0 0 -700px;
+}
+
+.mainProduct .arrows .next {
+    background: url(../img/next.png);
+    margin: 0 0 0 700px;
+}
+
+.mainProduct .slick-dots {
+    margin-top: 20px;
+}
+
+.mainProduct .slick-dots li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.mainProduct .slick-dots button {
+    width: 20px;
+    height: 20px;
+
+    border: none;
+    background: #ff6347;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
 }
